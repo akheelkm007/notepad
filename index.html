@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Notepad Application</title>
+	<script defer src="firebase.js"></script>
+	<script defer src="app.js"></script>
+	<style>
+		html,body {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: Roboto,Arial,sans-serif;
+		}
+		nav {
+			height: 56px;
+			background: #eee;
+			line-height: 56px;
+			padding-left: 16px;
+			color: rgba(0,0,0,0.75);
+		}
+
+
+		.text-box,.key {
+			box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+			width: 100%;
+		}
+
+		.key {
+			display: block;
+			width: 100%;
+			max-width: 480px;
+			margin: auto;
+			margin-top: 16px;
+			margin-bottom: 16px;
+		}
+
+		.text-box {
+			width: 90%;
+			margin: auto;
+			display: block;
+			height: auto;
+			min-height: 500px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav>
+		Notepad Application
+	</nav>
+	
+
+	<input type="text" class="key" id="key" placeholder="Type name of note and press Enter">
+	<textarea class="text-box" id="text-box" placeholder="Type message here"></textarea>
+
+</body>
+</html>
